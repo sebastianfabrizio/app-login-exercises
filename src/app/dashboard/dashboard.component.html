@@ -1,1 +1,13 @@
-<p>dashboard works!</p>
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    <button mat-raised-button (click)="irHome()" color="warn">Home</button>&nbsp;&nbsp;
+    <button mat-raised-button color="warn" (click)="irCurso()">Curso</button>&nbsp;&nbsp;
+    <button mat-raised-button color="warn" (click)="irEstado()">Estado</button>&nbsp;&nbsp;
+    <button mat-raised-button color="warn" (click)="irPost()">Post</button>&nbsp;&nbsp;
+    <button mat-raised-button color="warn" (click)="logout()"><mat-icon>power_settings_new</mat-icon></button>
+  </mat-toolbar>

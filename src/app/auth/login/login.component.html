@@ -1,1 +1,20 @@
-<p>login works!</p>
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Ingreso al sistema</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div style="display: flex; flex-direction: column;">
+            <mat-form-field appearance="fill">
+                <mat-label>Usuario</mat-label>
+                <input matInput type="text" #usuarioText>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Contraseña</mat-label>
+                <input matInput type="password" #passwordText>
+            </mat-form-field>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button (click)="submit(usuarioText, passwordText)" mat-raised-button color="warn">Ingresar</button>
+    </mat-card-actions>
+  </mat-card>
